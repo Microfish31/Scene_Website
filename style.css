@@ -1,0 +1,203 @@
+body {
+  margin:0px;
+  background-color: #84C1FF;
+}
+
+span {
+	display : none;
+}
+
+.Menu_Bar {
+	width:100%;
+	background: -webkit-linear-gradient(#FFDC35,#8CEA00);
+	background: -o-linear-gradient(#FFDC35,#8CEA00);
+	background: -moz-linear-gradient(#FFDC35,#8CEA00);
+	background: linear-gradient(#FFDC35,#8CEA00);
+	text-align:center;
+}
+
+.Main_Block {
+	background-color:#CAFFFF;
+}
+
+/*.view {
+	visibility: hidden;
+	height: 0;
+}*/
+
+/*
+#Link1:target ~ #Menu_Bar > ul li a[href$="#Link1"],
+#Link2:target ~ #Menu_Bar > ul li a[href$="#Link2"]
+#Link3:target ~ #Menu_Bar > ul li a[href$="#Link3"]
+#Link4:target ~ #Menu_Bar > ul li a[href$="#Link4"]
+#Link5:target ~ #Menu_Bar > ul li a[href$="#Link5"]
+#Link6:target ~ #Menu_Bar > ul li a[href$="#Link6"]
+#Link7:target ~ #Menu_Bar > ul li a[href$="#Link7"]
+{
+    background: #FFDC35;
+}
+*/
+
+#Link1:target ~ #view_block > div > div.content1,
+#Link2:target ~ #view_block > div > div.content2,
+#Link3:target ~ #view_block > div > div.content3,
+#Link4:target ~ #view_block > div > div.content4,
+#Link5:target ~ #view_block > div > div.content5,
+#Link6:target ~ #view_block > div > div.content6,
+#Link7:target ~ #view_block > div > div.content7
+{
+    visibility: visible;
+	
+}
+
+#Link1:target ~ .Main_Block,
+#Link2:target ~ .Main_Block,
+#Link3:target ~ .Main_Block,
+#Link4:target ~ .Main_Block,
+#Link5:target ~ .Main_Block,
+#Link6:target ~ .Main_Block,
+#Link7:target ~ .Main_Block
+{
+	display : none;
+}
+
+
+#view_block > div > div{
+	visibility:hidden;
+	height:0;
+}
+
+
+.Menu_Bar ul {
+	display : inline-flex;
+	list-style: none;
+}
+
+.Menu_Bar ul li{
+	width : 110px;
+	margin:15px;
+	padding:15px;
+}
+
+.Menu_Bar ul li a{
+	text-decoration:none;
+	color:#fff;
+}
+
+.Menu_Bar ul li:hover {
+	background:	#DAB1D5;
+	border-radius :5px;
+}
+
+.sub-menu1{
+	display :none;
+}
+
+.Menu_Bar ul li:hover .sub-menu1 {
+	//border : 3px black solid;
+	display: block;
+	position:absolute;
+	background: rgb(0,100,0);
+	margin-top: 15px;
+	margin-left: -15px;
+}
+
+.Menu_Bar ul li:hover .sub-menu1 ul{
+	//border : 3px black solid;
+	display: block;
+	margin: 5px;
+}
+
+.Menu_Bar ul li:hover .sub-menu1 ul li{
+	//border : 3px black solid;
+	width :100px;
+	padding:10px;
+	border-bottom: 1px dotted #fff;
+	background: transparent;
+	border-radius:0;
+	text-align:center;
+	margin-left: -20px;
+}
+
+.Menu_Bar ul li:hover .sub-menu1 ul li:last-child{
+	border-bottom: none;
+}
+
+.Menu_Bar ul li:hover .sub-menu1 ul li a:hover{
+	color: black;
+}
+
+.dialogue {
+  width: 500px;
+  padding: 20px;
+  box-shadow: 0 0 10px #000;
+  background-color: #f4f5f7;
+  border-radius: 20px;
+}
+
+.user div div img{
+	border-radius: 50%;
+	
+}
+
+.user {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  
+  .avatar {
+    width: 60px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  .pic {
+    border-radius: 50%;
+    overflow: hidden;
+	border : 30px;
+    img {
+      width: 100%;
+      vertical-align: middle;
+    }
+  }
+  
+  .clientname {
+    color: #333;
+  }
+  
+  .text {
+    background-color: #aaa;
+    padding: 16px;
+    border-radius: 10px;
+    position: relative;
+  }
+}
+
+.remote {
+  .text {
+    margin-left: 20px;
+    margin-right: 80px;
+    color: #eee;
+    background-color: #4179f1;
+	
+    &::before {
+      border-right: 10px solid #4179f1;
+      left: -10px;
+    }
+  }
+}
+
+.local {
+  justify-content: flex-end;
+  .text {
+    margin-right: 20px;
+    margin-left: 80px;
+    order: -1;
+    background-color: #fff;
+    color: #333;
+    &::before {
+      border-left: 10px solid #fff;
+      right: -10px;
+    }
+  }
+}

@@ -4,174 +4,152 @@
 	  <meta charset="UTF-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1" />
 	  
-	  <title>景點狀況詢問機器人</title>
+	  <title>景點狀況詢問器</title>
 	  
-	  <link rel="icon" href="{{ url_for('static', filename='img/Microfish.ico') }}">
+	  <link rel="icon" href="https://i.imgur.com/dkzrtMZ.png">
 	  
-	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-	  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
-	  
+	  <link rel="stylesheet" href="style.css">
 	</head>
 	
 	<body>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<span id="Link1">1</span>
+		<span id="Link2">2</span>
+		<span id="Link3">3</span>
+		<span id="Link4">4</span>
+		<span id="Link5">5</span>
+		<span id="Link6">6</span>
+		<span id="Link7">7</span>
+		<span id="Link8">8</span>
 		
-		
-		<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-			<ul class="navbar-nav">
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">更多</a>
-					
-					<div class="dropdown-menu">
+		<div class = "Menu_Bar">
+			<ul>
 				
-						<a class="dropdown-item" href="#explain">說明</a>
-						<a class="dropdown-item" href="#idea">設計理念</a>
-						<a class="dropdown-item" href="#designer">關於製作團隊</a>
-						
+				<li>
+						<a href="#Link1">景點燈號警示</a>
+				</li>
+					
+				<li>
+						<a href="#Link2">客製化旅遊推薦</a>
+				</li>
+					
+				<li>
+						<a href="#Link3">景點故事介紹</a>
+				</li>
+					
+				<li>
+						<a href="#Link4">轉乘資訊</a>
+				</li>
+					
+				<li>
+						<a href="#Link5">商業廣告結合</a>
+				</li>
+					
+				<li>
+						<a href="#Link6">日程突發警示</a>
+				</li>
+					
+				<li>
+						<a href="#Link7">日程排定</a>
+				</li>
+				
+				<li class = "Active">
+					<a href = "#Link8">更多資訊</a>
+					<div class = "sub-menu1">
+						<ul>
+							<li><a href="#explain">說明</a></li>
+							<li><a href="#idea">設計理念</a></li>
+							<li><a href="#designer">關於製作團隊</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<div id = "ask" class="Main_Block">
+				<h1 class="display"><strong>景點狀況詢問器</strong></h1>
+				<p class="lead">
+					<h4>
+						<strong>蒼海茫茫寄世，為學如棉纏水。</strong> 
+					</h4>
+				</p>
+				<a class="ask_button" href="#Start_Ask" role="button"> 
+					<h3><font color="#4B0091"> >> 進行詢問</font></h3>
+				</a>
+		</div>
+			
+		<div id = "view_block" class="view">
+    
+			<div class="introduction">
+					<div class="content1">
+						<img src="https://i.imgur.com/FvhFfdb.jpg" width="350" height="280">
+						<h2><i class="text"></i>景點燈號警示</h2>
+						<p>不住在紐約的人可能不知道，維克牧場坐落在一家裝潢的有點華麗的賽頓莊園裡。我以前經常去那裡，但現在我再也不去了。我慢慢沒有了這個習慣。維克牧場是個相當愉快適合社交的場合，令許許多多成熟老練的草泥馬們爭相前往。</p>
 					</div>
 					
-					<li class="nav-item">
-						<a class="nav-link" href="#ask">進行詢問</a>
-					</li>
+					<div class="content2">
+						<img src="https://i.imgur.com/bXOnkfQ.jpg" width="350" height="280">
+						<h2><i class="text"></i>客製化旅遊推薦</h2>
+						<p>有一個在我隔壁的傢伙不停的對自己照顧的草泥馬細聲細氣的說些討好的話。他不停的稱讚著牠的羊蹄，說牠有著貴族一般修長又強韌的羊蹄。什麼鬼。</p>
+					</div>
 					
-					</nav>
-				</li>
-			</ul>
-		</nav>
-		
-		<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-			<ul class="navbar-nav">
-				<tr><td align="center" valign="center">
-				
-				<li class="nav-item">
-					<a class="nav-link" href="#Link1">景點燈號警示</a>
-				</li>
-				
-				<li class="nav-item">
-					<a class="nav-link" href="#Link2">客製化旅遊推薦</a>
-				</li>
-				
-				<li class="nav-item">
-					<a class="nav-link" href="#Link3">景點故事介紹</a>
-				</li>
-				
-				<li class="nav-item">
-					<a class="nav-link" href="#Link4">轉乘資訊</a>
-				</li>
-				
-				<li class="nav-item">
-					<a class="nav-link" href="#Link5">商業廣告結合</a>
-				</li>
-				
-				<li class="nav-item">
-					<a class="nav-link" href="#Link6">日程突發警示</a>
-				</li>
-				
-				<li class="nav-item">
-					<a class="nav-link" href="#Link7">日程排定</a>
-				</li>
-				
-				</td></tr>
-			</ul>
-		</nav>
-		
-    <div id = "ask" class="jumbotron">
-	  <h1 class="display-4"><strong>景點狀況詢問器</strong></h1>
-	  <p class="lead">
-		  <h4>
-			<strong>蒼海茫茫寄世，為學如棉纏水。
-			</strong> 
-		  </h4>
-	  </p>
-  <a class="btn-dirty-purple btn-lg" href="#know_more" role="button"> 
-	<font color="#4B0091"> >> 進行詢問</font>
-  </a>
-</div>
-    
-<div class="introduction">
-	<div class="row_big_section">
-		<div id = "Link1" class="content">
-		<img src="https://i.imgur.com/FvhFfdb.jpg" width="350" height="280">
-		<h2><i class="text"></i>景點燈號警示</h2>
-		<p>不住在紐約的人可能不知道，維克牧場坐落在一家裝潢的有點華麗的賽頓莊園裡。我以前經常去那裡，但現在我再也不去了。我慢慢沒有了這個習慣。維克牧場是個相當愉快適合社交的場合，令許許多多成熟老練的草泥馬們爭相前往。</p>
-		</div>
-		
-		<div id = "Link2" class="content">
-		<img src="https://i.imgur.com/bXOnkfQ.jpg" width="350" height="280">
-		<h2><i class="text"></i>客製化旅遊推薦</h2>
-		<p>有一個在我隔壁的傢伙不停的對自己照顧的草泥馬細聲細氣的說些討好的話。他不停的稱讚著牠的羊蹄，說牠有著貴族一般修長又強韌的羊蹄。什麼鬼。</p>
-		</div>
-		
-		<div id = "Link3" class="content">
-		<img src="https://i.imgur.com/hV1f5uw.jpg" width="350" height="280">
-		<h2><i class="text"></i>景點故事介紹</h2>
-		<p>我確實問得太過私人了，我明白這點。但這就是露絲讓人覺得厭煩的其中一點。當我們還在胡頓莊園時，露絲老是喜歡要你描述最私人的一些經驗，還要非常詳細，鉅細靡遺那種。但當你開始討論到她的私事時，她整個臉就直接拉下來給你看。</p>
-		</div>
-		
-		<div id = "Link4" class="content">
-		<img src="https://i.imgur.com/DkYVTBo.png" width="350" height="280">
-		<h2><i class="text"></i>轉乘資訊</h2>
-		<p>我確實問得太過私人了，我明白這點。但這就是露絲讓人覺得厭煩的其中一點。當我們還在胡頓莊園時，露絲老是喜歡要你描述最私人的一些經驗，還要非常詳細，鉅細靡遺那種。但當你開始討論到她的私事時，她整個臉就直接拉下來給你看。</p>
-		</div>
-		
-		<div id = "Link5" class="content">
-		<img src="https://i.imgur.com/nOjLeBw.png" width="350" height="280">
-		<h2><i class="text"></i>商業廣告結合</h2>
-		<p>我確實問得太過私人了，我明白這點。但這就是露絲讓人覺得厭煩的其中一點。當我們還在胡頓莊園時，露絲老是喜歡要你描述最私人的一些經驗，還要非常詳細，鉅細靡遺那種。但當你開始討論到她的私事時，她整個臉就直接拉下來給你看。</p>
-		</div>
-		
-		<div id = "Link6" class="content">
-		<img src="https://i.imgur.com/iN41PEO.png" width="350" height="280">
-		<h2><i class="text"></i>日程突發警示</h2>
-		<p>我確實問得太過私人了，我明白這點。但這就是露絲讓人覺得厭煩的其中一點。當我們還在胡頓莊園時，露絲老是喜歡要你描述最私人的一些經驗，還要非常詳細，鉅細靡遺那種。但當你開始討論到她的私事時，她整個臉就直接拉下來給你看。</p>
-		</div>
-		
-		<div id= "Link7" class="content">
-		<img src="https://i.imgur.com/IQE5jJC.jpg" width="350" height="280">
-		<h2><i class="text"></i>日程排定</h2>
-		<p>我確實問得太過私人了，我明白這點。但這就是露絲讓人覺得厭煩的其中一點。當我們還在胡頓莊園時，露絲老是喜歡要你描述最私人的一些經驗，還要非常詳細，鉅細靡遺那種。但當你開始討論到她的私事時，她整個臉就直接拉下來給你看。</p>
-		</div>
-	</div>
-</div>
-
-<div class="ask_area">
-
-  <div id = "know_more" class="row">
-    <div  class="col bg-light border rounded border-dark">詢問區
-		<div class="lhs">
-			<h6>內文</h6>
-			<div class="dialogue">
-		  <div class="user remote">
-			<div class="avatar">
-			  <div class="pic">
-				<img src="https://picsum.photos/100/100?random=12" />
-			  </div>
-			  <div class="name">You</div>
+					<div class="content3">
+						<img src="https://i.imgur.com/hV1f5uw.jpg" width="350" height="280">
+						<h2><i class="text"></i>景點故事介紹</h2>
+						<p>我確實問得太過私人了，我明白這點。但這就是露絲讓人覺得厭煩的其中一點。當我們還在胡頓莊園時，露絲老是喜歡要你描述最私人的一些經驗，還要非常詳細，鉅細靡遺那種。但當你開始討論到她的私事時，她整個臉就直接拉下來給你看。</p>
+					</div>
+					<div class="content4">
+						<img src="https://i.imgur.com/DkYVTBo.png" width="350" height="280">
+						<h2><i class="text"></i>轉乘資訊</h2>
+						<p>我確實問得太過私人了，我明白這點。但這就是露絲讓人覺得厭煩的其中一點。當我們還在胡頓莊園時，露絲老是喜歡要你描述最私人的一些經驗，還要非常詳細，鉅細靡遺那種。但當你開始討論到她的私事時，她整個臉就直接拉下來給你看。</p>
+					</div>
+					<div class="content5">
+						<img src="https://i.imgur.com/nOjLeBw.png" width="350" height="280">
+						<h2><i class="text"></i>商業廣告結合</h2>
+						<p>我確實問得太過私人了，我明白這點。但這就是露絲讓人覺得厭煩的其中一點。當我們還在胡頓莊園時，露絲老是喜歡要你描述最私人的一些經驗，還要非常詳細，鉅細靡遺那種。但當你開始討論到她的私事時，她整個臉就直接拉下來給你看。</p>
+					</div>
+					<div class="content6">
+						<img src="https://i.imgur.com/iN41PEO.png" width="350" height="280">
+						<h2><i class="text"></i>日程突發警示</h2>
+						<p>我確實問得太過私人了，我明白這點。但這就是露絲讓人覺得厭煩的其中一點。當我們還在胡頓莊園時，露絲老是喜歡要你描述最私人的一些經驗，還要非常詳細，鉅細靡遺那種。但當你開始討論到她的私事時，她整個臉就直接拉下來給你看。</p>
+					</div>
+					<div class="content7">
+						<img src="https://i.imgur.com/IQE5jJC.jpg" width="350" height="280">
+						<h2><i class="text"></i>日程排定</h2>
+						<p>我確實問得太過私人了，我明白這點。但這就是露絲讓人覺得厭煩的其中一點。當我們還在胡頓莊園時，露絲老是喜歡要你描述最私人的一些經驗，還要非常詳細，鉅細靡遺那種。但當你開始討論到她的私事時，她整個臉就直接拉下來給你看。</p>
+					</div>
 			</div>
-			<div class="text">這是妳的對話文字</div>
-		  </div>
-		  <div class="user local">
-			<div class="avatar">
-			  <div class="pic">
-				<img src="https://picsum.photos/100/100?random=16" />
-			  </div>
-			  <div class="name">Me</div>
-			</div>
-			<div class="text">這是我的對話文字</div>
-		  </div>
-		</div>
-		</div>
-	</div>
-    <div class="col bg-light border rounded border-dark">表單區
-		<div class="rhs">
-			<h6>內文</h6>
-		</div>
-	</div>
-  </div>
+			
 
-</div>
+			<div id = "Start_Ask" class="start_ask">
+				<div class="col">
+					<h2>詢問區</h2>
+					<div class="dialogue">
+						<div class="user remote">
+							<div class="avatar">
+								<div class="pic">
+									<img src="https://picsum.photos/100/100?random=12">
+								</div>
+								<div class="clientname">Yang
+								</div>
+							</div>
+							<div class="text">嗨嗨，您好!!!</div>
+						</div>
+				  
+						<div class="user local">
+							<div class="text">嗨嗨，您好呀!!!</div>
+							<div class="avatar">
+								<div class="pic">
+									<img src="https://picsum.photos/100/100?random=16">
+								</div>
+					  
+								<div class="clientname">Microfish</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col border"> <h2>表單區</h2>
+			</div>
+		</div>
 	</body>
 </html>
